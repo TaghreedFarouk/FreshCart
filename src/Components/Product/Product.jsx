@@ -23,12 +23,7 @@ export default function Product({ products }) {
       await removeProductFromWishlist(productId);
     } else {
       await addProductToWishlist(productId);
-      toast.success('Product added to wishlist', {
-        position: "bottom-right",
-        autoClose: 2000,
-        transition: Slide,
-        theme: "colored"
-      });
+    
     }
 
     if (e) {
